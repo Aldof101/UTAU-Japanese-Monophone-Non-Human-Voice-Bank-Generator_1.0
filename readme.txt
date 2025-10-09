@@ -1,0 +1,15 @@
+无中之人音源子音作成包ver1.0。这个压缩包有着各个开源tts语音截取的辅音以及我自己做的一些辅音，供无中之人音源学习和频谱参考用。辅音包含了中英日粤四个语言，我对日语的辅音进行了标准化处理搭载了python自动拼接脚本，原理为对辅音的55%时长时与元音进行交叉淡化，您也可以自己更改百分比。中文和粤语更复杂，英语的录音表则较多，请您自行选择和拼接。在使用脚本前，请确定您安装了python环境。使用时请更改consonant_path = r"this\is\a\PATH"
+vowel_path = r"this\is\a\PATH"
+output_path = r"this\is\a\PATH"，分别为辅音路径（可以使用此文件内的日文辅音路径）、元音路径（请确保您有a.wav, i.wav, u.wav, e.wav, o.wav和n.wav六个单声道、44100hz和16bit的音频文件）和输出路径（即输出拼接好的音节的位置）。windows系统输入cmd，再输入python autojpn.py即可运行。配合moresampler的自动oto，可以快速测试您的无中之人音源。您也可以将路径改为您自己制作的辅音文件夹下。此脚本开源，仅供无中之人音源的制作和学习参考用，禁止用于商业和非法用途。By Aldof
+
+Non-vocal Voice Source Consonant Construction Pack ver1.0. This archive contains consonants extracted from various open-source TTS voices, as well as some consonants I created myself, for use as learning and spectral reference material for non-vocal voice sources. The consonants cover Chinese, English, Japanese, and Cantonese. I standardized the Japanese consonants and included a Python auto-joining script. The script works by applying a crossfade at 55% of the consonant's duration before blending it with the vowel. You can adjust this percentage if needed. Chinese and Cantonese are more complex, and English has more extensive recording tables, so please select and join them manually. Before using the script, ensure you have a Python environment installed. To use it, update the paths:
+consonant_path = r"this\is\a\PATH"
+vowel_path = r"this\is\a\PATH"
+output_path = r"this\is\a\PATH"
+These correspond to the consonant path (you can use the Japanese consonants included in this pack), vowel path (ensure you have mono, 44100Hz, 16-bit WAV files for a.wav, i.wav, u.wav, e.wav, o.wav, and n.wav), and output path (where the joined syllables will be saved). On Windows, open cmd and enter python autojpn.py to run the script. Combined with Moresampler's automatic oto, this can help quickly test your non-vocal voice source. You can also change the paths to use your own consonant folders. This script is open-source and intended only for non-vocal voice source development and learning. Commercial or illegal use is prohibited. By Aldof.
+
+無中之人音源子音作成パック ver1.0。このアーカイブには、さまざまなオープンソースTTS音声から抽出した子音および自身で作成した子音が含まれており、無中之人音源の学習とスペクトル参考用としてご利用いただけます。子音は中国語、英語、日本語、広東語を含みます。日本語の子音は標準化処理を施し、Python自動結合スクリプトを同梱しています。原理は、子音の長さの55%の位置で母音とクロスフェード処理を行うものです。パーセンテージは自行変更可能です。中国語と広東語はより複雑であり、英語は録音表が较多いため、自行選択と結合を行ってください。スクリプト使用前にPython環境がインストールされていることを確認してください。使用時は、次のパスを変更してください:
+consonant_path = r"this\is\a\PATH"
+vowel_path = r"this\is\a\PATH"
+output_path = r"this\is\a\PATH"
+これらはそれぞれ、子音パス（同梱の日本語子音パスを使用可能）、母音パス（a.wav, i.wav, u.wav, e.wav, o.wav, n.wavの6つのモノラル、44100Hz、16bitの音声ファイルを用意してください）、出力パス（結合された音節の保存先）に対応します。Windowsでは、cmdを開き、python autojpn.py と入力してスクリプトを実行します。Moresamplerの自動otoと併用することで、無中之人音源の迅速なテストが可能です。自身で作成した子音フォルダのパスに変更することも可能です。本スクリプトはオープンソースであり、無中之人音源の制作と学習参考用のみに供し、商用利用や違法な用途を禁じます。By Aldof。
